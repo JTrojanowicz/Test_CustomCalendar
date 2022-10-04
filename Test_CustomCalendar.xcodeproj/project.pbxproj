@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		EF9A0F0F28EC15C400A8AE36 /* Test_CustomCalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9A0F0E28EC15C400A8AE36 /* Test_CustomCalendarApp.swift */; };
-		EF9A0F1128EC15C400A8AE36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9A0F1028EC15C400A8AE36 /* ContentView.swift */; };
+		EF9A0F1128EC15C400A8AE36 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9A0F1028EC15C400A8AE36 /* CalendarView.swift */; };
 		EF9A0F1328EC15C500A8AE36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9A0F1228EC15C500A8AE36 /* Assets.xcassets */; };
 		EF9A0F1628EC15C600A8AE36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9A0F1528EC15C600A8AE36 /* Preview Assets.xcassets */; };
+		EF9A0F1D28EC15F400A8AE36 /* Extension_DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9A0F1C28EC15F400A8AE36 /* Extension_DateFormatter.swift */; };
+		EF9A0F2228EC164400A8AE36 /* Extension_Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9A0F2128EC164400A8AE36 /* Extension_Calendar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF9A0F0B28EC15C400A8AE36 /* Test_CustomCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_CustomCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9A0F0E28EC15C400A8AE36 /* Test_CustomCalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_CustomCalendarApp.swift; sourceTree = "<group>"; };
-		EF9A0F1028EC15C400A8AE36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF9A0F1028EC15C400A8AE36 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		EF9A0F1228EC15C500A8AE36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF9A0F1528EC15C600A8AE36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF9A0F1C28EC15F400A8AE36 /* Extension_DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_DateFormatter.swift; sourceTree = "<group>"; };
+		EF9A0F2128EC164400A8AE36 /* Extension_Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Calendar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				EF9A0F0E28EC15C400A8AE36 /* Test_CustomCalendarApp.swift */,
-				EF9A0F1028EC15C400A8AE36 /* ContentView.swift */,
+				EF9A0F1E28EC15FE00A8AE36 /* MODELS */,
+				EF9A0F2028EC160F00A8AE36 /* VIEWS */,
 				EF9A0F1228EC15C500A8AE36 /* Assets.xcassets */,
 				EF9A0F1428EC15C600A8AE36 /* Preview Content */,
 			);
@@ -65,6 +70,31 @@
 				EF9A0F1528EC15C600A8AE36 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF9A0F1E28EC15FE00A8AE36 /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+				EF9A0F1F28EC160500A8AE36 /* Extensions */,
+			);
+			path = MODELS;
+			sourceTree = "<group>";
+		};
+		EF9A0F1F28EC160500A8AE36 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF9A0F1C28EC15F400A8AE36 /* Extension_DateFormatter.swift */,
+				EF9A0F2128EC164400A8AE36 /* Extension_Calendar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF9A0F2028EC160F00A8AE36 /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				EF9A0F1028EC15C400A8AE36 /* CalendarView.swift */,
+			);
+			path = VIEWS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF9A0F1128EC15C400A8AE36 /* ContentView.swift in Sources */,
+				EF9A0F1128EC15C400A8AE36 /* CalendarView.swift in Sources */,
+				EF9A0F2228EC164400A8AE36 /* Extension_Calendar.swift in Sources */,
+				EF9A0F1D28EC15F400A8AE36 /* Extension_DateFormatter.swift in Sources */,
 				EF9A0F0F28EC15C400A8AE36 /* Test_CustomCalendarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
